@@ -6,9 +6,13 @@ import { Header } from './components/Header';
 export function App() {
   const [todos, setTodos] = useState<string[]>([]);
 
+  function handleCreateNewTodo() {
+    //create new todo
+  }
+
   return (
     <div>
-      <Header onAddNewTodo={() => console.log("Add new todo")} />
+      <Header onAddNewTodo={handleCreateNewTodo} />
 
       <main>
         <h2> Advantages </h2>
